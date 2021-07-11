@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Fitness</title>
+</head>
+<link rel="stylesheet" href="tut26project.css">
+<style>
+    /* CSS RESET */
+    BODY{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("jim.png");
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 24px;
+        top: 20px;
+        /* border-radius: 8px; */
+
+    }
+    .left img{
+        width: 82px;
+        filter: invert(100%);
+    }
+    .left div{
+         line-height: 19px;
+        font-size:15px;
+        text-align: center;
+
+    }
+    .mid{
+        display: block;
+        width: 42%;
+        margin: 37px auto;
+        /* border: 3px solid rgb(252, 255, 252); */
+        border-radius: 4px;
+
+    }
+    .right{
+        position: absolute;
+        right: 20px;
+        top: 36px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 21px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        /* padding: 5px ; */
+        /* padding: 20px 23px; */
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        color:grey;
+        text-decoration: underline;
+
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border-radius: 10px;
+        border: 2px solid grey;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(161, 107, 107);
+        }
+    .container {
+    border: 2px solid pink;
+    margin: 83px 67px;
+    padding: 37px 44px;
+    width: 33%;
+    border-radius: 16px;
+background:rgba(92, 89, 89, 0.5);
+/* background-color: ; */
+}
+.form-group input{
+
+    text-align: center;
+    display: block;
+    width: 343px;
+    padding: 6px;
+    border: 2px solid rgb(205, 245, 30);
+    margin: 12px auto;
+    font-size: 20px;
+    border-radius: 8px;
+
+}
+.container h1{
+     text-align: center;
+}
+.container button{
+    display: block;
+    width: 402px;
+    margin: 30px auto;
+
+}
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo,png" alt="rakesh">
+            <div>rakesh fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <!-- right box for butttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email US</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join with us for improvement</h1>
+        <form action="noaction.png">
+       <div class="form-group">
+           <input type="text" name="" placeholder="Enter your name">
+       </div>     
+       <div class="form-group">
+           <input type="text" name="" placeholder="Enter your Age">
+       </div>     
+       <div class="form-group">
+           <input type="text" name="" placeholder="Enter your Gender">
+       </div>     
+       <div class="form-group">
+           <input type="text" name="" placeholder="Enter your Locality">
+       </div>     
+       <button class="btn">Submit</button>  
+        </form>
+
+    </div>
+    
+</body>
+</html>
